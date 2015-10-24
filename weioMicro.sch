@@ -1,0 +1,168 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:AMS1117
+LIBS:CH340G
+LIBS:weioMicro-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "WeIO Micro"
+Date "Sat 24 Oct 2015"
+Rev "v0.1"
+Comp "Mainflux"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12E U?
+U 1 1 562BBA40
+P 4900 2950
+F 0 "U?" H 4900 2850 50  0000 C CNN
+F 1 "ESP-12E" H 4900 3050 50  0000 C CNN
+F 2 "" H 4900 2950 50  0001 C CNN
+F 3 "" H 4900 2950 50  0001 C CNN
+	1    4900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 562BBBCA
+P 3850 3800
+F 0 "#PWR?" H 3850 3650 60  0001 C CNN
+F 1 "VCC" H 3850 3950 60  0000 C CNN
+F 2 "" H 3850 3800 60  0000 C CNN
+F 3 "" H 3850 3800 60  0000 C CNN
+	1    3850 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 562BBC8F
+P 5950 3800
+F 0 "#PWR?" H 5950 3550 60  0001 C CNN
+F 1 "GND" H 5950 3650 60  0000 C CNN
+F 2 "" H 5950 3800 60  0000 C CNN
+F 3 "" H 5950 3800 60  0000 C CNN
+	1    5950 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LD1117S33TR U?
+U 1 1 562BFBE7
+P 2350 4500
+F 0 "U?" H 2350 4750 40  0000 C CNN
+F 1 "LD1117S33TR" H 2350 4700 40  0000 C CNN
+F 2 "SOT-223" H 2350 4600 40  0000 C CNN
+F 3 "" H 2350 4500 60  0000 C CNN
+	1    2350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 562BFEEC
+P 1650 4650
+F 0 "C?" H 1700 4750 50  0000 L CNN
+F 1 "C" H 1700 4550 50  0000 L CNN
+F 2 "" H 1688 4500 30  0000 C CNN
+F 3 "" H 1650 4650 60  0000 C CNN
+	1    1650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 562BFF90
+P 2950 4650
+F 0 "C?" H 3000 4750 50  0000 L CNN
+F 1 "C" H 3000 4550 50  0000 L CNN
+F 2 "" H 2988 4500 30  0000 C CNN
+F 3 "" H 2950 4650 60  0000 C CNN
+	1    2950 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 562C0209
+P 2350 5100
+F 0 "#PWR?" H 2350 4850 60  0001 C CNN
+F 1 "GND" H 2350 4950 60  0000 C CNN
+F 2 "" H 2350 5100 60  0000 C CNN
+F 3 "" H 2350 5100 60  0000 C CNN
+	1    2350 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3350 3850 3350
+Wire Wire Line
+	3850 3350 3850 3800
+Wire Wire Line
+	5950 3800 5950 3350
+Wire Wire Line
+	5950 3350 5800 3350
+Wire Wire Line
+	1250 4450 1950 4450
+Wire Wire Line
+	2750 4450 3400 4450
+Wire Wire Line
+	2350 4750 2350 5100
+Wire Wire Line
+	1650 4850 2950 4850
+Connection ~ 2350 4850
+Connection ~ 2950 4450
+Connection ~ 1650 4450
+$Comp
+L USB-MICRO-B CON?
+U 1 1 562C04DC
+P 8800 2850
+F 0 "CON?" H 8500 3200 50  0000 C CNN
+F 1 "USB-MICRO-B" H 8650 2500 50  0000 C CNN
+F 2 "" H 8800 2750 50  0000 C CNN
+F 3 "" H 8800 2750 50  0000 C CNN
+	1    8800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CH340G U?
+U 1 1 562C0870
+P 7500 4600
+F 0 "U?" H 7500 4600 50  0001 L CNN
+F 1 "CH340G" H 7500 4600 50  0001 L CNN
+F 2 "SOP-16" H 7500 4600 50  0001 L CNN
+F 3 "" H 7500 4600 60  0000 C CNN
+	1    7500 4600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
